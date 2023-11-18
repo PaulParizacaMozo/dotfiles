@@ -1,0 +1,3 @@
+❯ kitty -v
+kitty 0.30.1 created by Kovid Goyal
+
