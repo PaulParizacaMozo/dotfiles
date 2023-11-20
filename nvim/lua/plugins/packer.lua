@@ -31,8 +31,16 @@ return require('packer').startup(function(use)
     use 'vim-airline/vim-airline'
     use 'vim-airline/vim-airline-themes'
     use 'ryanoasis/vim-devicons'
+
+
     use {
       'nmac427/guess-indent.nvim',
       config = function() require('guess-indent').setup {} end,
+    }
+    -- Telescope
+    use {
+      'nvim-telescope/telescope.nvim', tag = '0.1.4',
+    -- or                            , branch = '0.1.x',
+      requires = { {'nvim-lua/plenary.nvim'} }
     }
 end)
