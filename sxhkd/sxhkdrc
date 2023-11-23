@@ -13,7 +13,6 @@ super + p
 super + {_,shift + }p
         scrot -s '/tmp/%F_%T_$wx$h.png' -e 'xclip -selection clipboard -target image/png -i $f'
 
-
 #rofi -font "hack 9" -show drun -icon-theme "Papirus" -show-icons 
 # program launcher
 super + d
@@ -22,6 +21,10 @@ super + d
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
+
+# lockscreen
+super + x
+	betterlockscreen -l 
 
 #
 # bspwm hotkeys
