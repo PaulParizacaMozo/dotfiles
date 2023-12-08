@@ -24,10 +24,16 @@ map('', '<leader><tab>', ':NERDTreeToggle<CR>',{noremap = true})
 
 --Airlane pestañas
 --Moverse al buffer siguiente
-map('n', '<leader>k', ':bn<CR>', {noremap = true})
---Moverse al buffer anterior
-map('n', '<leader>j', ':bp<CR>', {noremap = true})
+--map('n', '<leader>k', ':bn<CR>', {noremap = true})
+----Moverse al buffer anterior
+--map('n', '<leader>j', ':bp<CR>', {noremap = true})
 --Cerrar el bufer actual
 map('n', '<leader>q', ':bdelete<CR>', {noremap = true})
 --Crear nueva ventana
 map('n', '<leader>t', ':tabe<CR>', {noremap = true})
+
+
+-- Mover al siguiente buffer
+map('n', '<C-k>', ':bnext<CR>', default_opts)
+-- Mover al buffer anterior
+map('n', '<C-j>', ':bprev<CR>', default_opts)
