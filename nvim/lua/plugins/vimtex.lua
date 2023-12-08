@@ -26,5 +26,8 @@ vim.g.maplocalleader = ','
 
 -- Si prefieres asignar el valor a `maplocalleader` localmente en un buffer específico, puedes hacerlo así:
 -- vim.api.nvim_buf_set_var(0, 'maplocalleader', ',')
-
---Instalar latexrun, zathura si es necesario
+--[[
+Instalar latexrun, zathura si es necesario
+Instalar texlive(librerias de latex)
+sudo pacman -S texlive, todas las opciones
+--]]
