@@ -37,3 +37,6 @@ map('n', '<leader>t', ':tabe<CR>', {noremap = true})
 map('n', '<C-k>', ':bnext<CR>', default_opts)
 -- Mover al buffer anterior
 map('n', '<C-j>', ':bprev<CR>', default_opts)
+
+-- Open OIL
+vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
