@@ -61,4 +61,6 @@ return require('packer').startup(function(use)
         require("oil").setup()
       end,
     })
+    --Github copilot
+    use 'github/copilot.vim'
 end)
