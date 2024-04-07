@@ -63,4 +63,7 @@ return require('packer').startup(function(use)
     })
     --Github copilot
     use 'github/copilot.vim'
+
+    --Colors
+    use 'norcalli/nvim-colorizer.lua'
 end)
