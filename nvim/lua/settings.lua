@@ -39,7 +39,7 @@ opt.smartcase = true          -- ignore lowercase for the whole pattern
 opt.linebreak = true          -- wrap on word boundary
 opt.conceallevel = 0
 opt.termguicolors = true
-opt.encoding= "utf-8"
+opt.encoding= "UTF-8"
 opt.guifont = "JetBrainsMono Nerd Font"
 g.neovide_cursor_vfx_mode = "railgun"
 
