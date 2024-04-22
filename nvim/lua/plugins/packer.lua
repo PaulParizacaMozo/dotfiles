@@ -22,14 +22,15 @@ return require('packer').startup(function(use)
     use 'scrooloose/nerdtree'       --NerdTree
     use 'jiangmiao/auto-pairs'      --Completa Pares()[]
     use 'nvim-treesitter/nvim-treesitter'   --Treesitter
-    use 'neoclide/coc.nvim'         --CocInstall
+    --use 'neoclide/coc.nvim'         --CocInstall
     use 'SirVer/Ultisnips'          --Snippets
     use 'honza/vim-snippets'        --Snippets
 
     use 'lewis6991/gitsigns.nvim'   --Git
-
+    --Airline
     use 'vim-airline/vim-airline'
     use 'vim-airline/vim-airline-themes'
+    -- Icons
     use 'ryanoasis/vim-devicons'
 
 
@@ -40,18 +41,15 @@ return require('packer').startup(function(use)
     -- Telescope
     use {
       'nvim-telescope/telescope.nvim', tag = '0.1.4',
-    -- or                            , branch = '0.1.x',
       requires = { {'nvim-lua/plenary.nvim'} }
     }
     --Preview Markdown
     -- https://github.com/iamcco/markdown-preview.nvim
-    -- install without yarn or npm
     use({
         "iamcco/markdown-preview.nvim",
         run = function() vim.fn["mkdp#util#install"]() end,
     })
     
-    use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
     -- Latex
     use 'lervag/vimtex'
     -- Oil - Create directory and files
@@ -66,4 +64,41 @@ return require('packer').startup(function(use)
 
     --Colors
     use 'norcalli/nvim-colorizer.lua'
+    --Poliglot
+    --use 'sheerun/vim-polyglot'
+    
+    --OmniSharp
+    --use 'OmniSharp/omnisharp-vim'
+    --use 'dense-analysis/ale'
+    --use 'nickspoons/vim-sharpenup'
+
+    --Lsp (mason,neodev)
+    use {
+        "neovim/nvim-lspconfig",
+        requires = {
+            "williamboman/mason.nvim",
+            "williamboman/mason-lspconfig.nvim",
+            "folke/neodev.nvim",
+        },
+        config = function()
+            require("neodev").setup()
+        end,
+    }
+    --Cmp Autocompletition
+    use{
+        "hrsh7th/nvim-cmp",
+        requires = {
+            "hrsh7th/cmp-buffer",
+            "hrsh7th/cmp-path",
+            "hrsh7th/cmp-nvim-lsp",
+            "hrsh7th/cmp-cmdline",
+            "hrsh7th/cmp-git",
+            --"windwp/nvim-autopairs",
+            --"L3MON4D3/LuaSnip",
+            --"saadparwaiz1/cmp_luasnip",
+            --"windwp/nvim-autopairs",
+        },
+    }
+
+
 end)

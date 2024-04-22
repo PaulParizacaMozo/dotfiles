@@ -8,6 +8,7 @@ configs.setup {
     "java",
     "javascript",
     "go",
+    "c_sharp",
   },
   sync_install = false,
   ignore_install = { "" }, -- List of parsers to ignore installing

@@ -41,6 +41,7 @@ opt.conceallevel = 0
 opt.termguicolors = true
 opt.encoding= "UTF-8"
 opt.guifont = "JetBrainsMono Nerd Font"
+opt.modeline= false 
 g.neovide_cursor_vfx_mode = "railgun"
 
 -----------------------------------------------------------
