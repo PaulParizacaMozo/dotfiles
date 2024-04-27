@@ -68,7 +68,7 @@ return require('packer').startup(function(use)
     --use 'sheerun/vim-polyglot'
     
     --OmniSharp
-    --use 'OmniSharp/omnisharp-vim'
+    use 'OmniSharp/omnisharp-vim'
     --use 'dense-analysis/ale'
     --use 'nickspoons/vim-sharpenup'
 

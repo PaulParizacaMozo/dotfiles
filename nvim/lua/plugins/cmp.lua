@@ -72,6 +72,6 @@ require('mason-lspconfig').setup()
   require('lspconfig')['clangd'].setup {
     capabilities = lsp_capabilities
   }
-  require('lspconfig')['csharp_ls'].setup {
-    capabilities = lsp_capabilities
+  require('lspconfig')['omnisharp'].setup {
+    capabilities = lsp_capabilities,
   }
